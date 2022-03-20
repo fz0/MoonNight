@@ -1,11 +1,15 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
-    <title>MoonNight</title>
+    <title>FFFeralDruid</title>
     <style>
         #desc {
             font-size: 35px;
             text-align: center;
+            color: #eee;
 
+        }
+        .title{
+            color: #eee;
         }
         .gradient-text {
             background-image: linear-gradient(90deg, $red, $orange);
@@ -84,20 +88,22 @@
 
 
         .box{
-            margin-top: 80px;
+            margin-top: 8px;
             width: 100%;
             height: 340px;
-
             position: relative;
         }
 
         .list{
-            width: 1200px;
+            background: #f2f3f5;
+            width: 80%;
             height: 300px;
             overflow: hidden;
             position: absolute;
-            left: 50%;
-            margin-left: -600px;
+            left: 10%;
+            -moz-border-radius: 10px; 
+            -webkit-border-radius: 10px; 
+            border-radius: 10px; 
         }
 
         .btn{
@@ -179,22 +185,92 @@
             padding-top: 4px;
             cursor: pointer;
         }
+        /*
         span{
             display: block;
             width: 35px;
             height: 1px;
-            background: red;
-        }
+        }*/
         .blue{
             background: blue;
+        }
+        body{
+            background: #3662ec;
+        }
+        .container {
+            text-align: left;
+            padding-left: 20%;
+            background: #fff;
+            height: 100px;
+            width:120%;
+        }
+        .container img{
+            max-height: 80px;
+        }
+        .container>div{
+            margin-bottom: 10px;
+            margin-top: 10px;     
+            vertical-align: middle;
+        }
+        .container div{
+            max-height: 80px;
+            display: inline-block;
+        }
+        .logo{
+            border-right: solid 2px #d7d7d7;
+            padding-right: 13px;
+        }
+        .logo-text{
+            font-size: 25px;
+            margin-top: 4px;
+            display: block;
+            font-style: oblique;
+        }
+        .logo-text.text2{
+            font-size: 22px;
+            font-family: cursive;
+        }
+        .logo-text2{
+            margin-left: 10px;
+            font-size: 20px;
+            display: inline-block;
+        }
+        .link{
+            font-size: 20px;
+            margin-left: 30px;
+            text-decoration:none;
+            color: #3662ec;
+        }
+        .menu>div{
+            /*border-left: 1px solid #eee;*/
         }
     </style>
 </head>
 
 <body>
-<div id="desc">范服网红</div>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.jpg" style="width: 80px" alt="" />
+            <div>
+                <span class="logo-text">Feral Druid</span>
+                <span class="logo-text text2">猛虎永不畏缩</span>
+            </div>
+        </div>
+        <div class="menu">    
+            <div>
+                <span class="logo-text2">点击传送>></span>
+            </div>
+            <div class="link">
+                <a class="link" href="https://bbs.nga.cn/read.php?tid=27363086">吸大:基础篇</a>
+            </div>
+            <div class="link">
+                <a class="link" href="https://nga.178.com/read.php?tid=30905955">歌大:进阶WA</a>
+            </div>
+        </div>
+    </div>
+<div id="desc" class="title">范服网红</div>
 <div class="bruce flex-ct-x">
-    <h1>月夜雷鸣</h1>
+    <h1 class="title">月夜雷鸣</h1>
     <h1 class="gradient-text">李逍遥</h1>
 </div>
 <div class="box">
